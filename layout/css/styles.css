@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+@media (min-width: 468px) {
+  .container-1 {
+    display: flex;
+    /*
+      align-items:flex-start;
+      align-items:flex-end;
+      align-items:center;
+      
+      flex-direction:column;
+      */
+  }
+
+  .container-2 {
+    display: flex;
+    /*
+      justify-content:flex-start;
+      justify-content:flex-end;
+      justify-content:center;
+      justify-content:space-around;
+      */
+    justify-content: space-between;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: wheat;
+}
+
+nav li,
+a,
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.nav-links {
+  list-style: none;
+  float: left;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+.box1 {
+  border-color: #bdffbd;
+  background-color: #c1eba7;
+  width: 48%;
+  flex: 1;
+  margin-bottom: 1rem;
+  order: 1;
+}
+
+aside {
+  float: right;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 0;
+  padding: 1rem;
+  background-color: #c1eba7;
+}
+
+.box2 {
+  flex: 1;
+  width: 48%;
+  order: 3;
+}
+
+.box2 p {
+  border: 2px solid #bdffbd;
+  margin-top: 0;
+}
+
+strong,
+em {
+  border: 2px solid;
+}
+
+.box3 {
+  border: 0.5rem solid #c1eba7;
+  flex: 1;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-image: url(http://placekitten.com/g/200/300);
+  height: 16rem;
+  width: 20rem;
+  margin-top: 0;
+  order: 2;
+}
+
+.floatleft {
+  float: left;
+  margin: 0 1rem 1rem 0;
+}
+
+article {
+  width: 100%;
+  border: 3px solid blue;
+  margin: 0 auto;
+  flex: 1;
+}
+
+.article:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+li {
+  border: 3px solid blue;
+  flex-basis: 10%;
+}
